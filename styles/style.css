@@ -12,14 +12,23 @@ html {
   box-sizing: inherit;
   /* to save value box-sizing: border-box if I connect librearies */
 }
+:root {
+  --font-size: 16px;
+  --font-family: "Open Sans", sans-serif;
+  --color: #333333;
+}
 
 body {
-  font-family: serif;
+  font-family: var(--font-family);
+  font-weight: 400;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+ul {
+  list-style: none;
 }
 
 img {
@@ -30,17 +39,39 @@ img {
   max-width: 1920px;
   padding: 0 160px;
 }
+
+/* header section */
+
 .header {
   display: flex;
   flex-direction: column;
 }
 .header__top {
+  height: 100px;
   background-color: black;
 }
+.header__top .container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__burger {
+  display: none;
+}
+.header__logo-img {
+  width: 173px;
+  height: 40px;
+}
+.header__top__nav-list {
+  color: #ffffff;
+  display: flex;
+}
+.header__top__nav-item:not(:last-child) {
+  margin-right: 62px;
+}
+
 .header__bottom {
   background-color: black;
   opacity: 70%;
-}
-.header__top__nav-list {
-  display: flex;
 }
