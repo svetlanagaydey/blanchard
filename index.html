@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+  <script src="./js/dropdown.js"></script>
   <header class="header">
 
     <div class="header__top">
@@ -22,30 +23,55 @@
         </a>
         <nav class="header__top__nav">
           <ul class="header__top__nav-list">
-            <li class="header__top__nav-item">О нас</li>
-            <li class="header__top__nav-item">Галерея</li>
-            <li class="header__top__nav-item">Каталог</li>
-            <li class="header__top__nav-item">События</li>
-            <li class="header__top__nav-item">Проекты</li>
-            <li class="header__top__nav-item">Контакты</li>
+            
+            <li class="header__top__nav-item"><a href="">О нас</a></li>
+            <li class="header__top__nav-item"><a href="">Галерея</a></li>
+            <li class="header__top__nav-item"><a href="">Каталог</a></li>
+            <li class="header__top__nav-item"><a href="">События</a></li>
+            <li class="header__top__nav-item"><a href="">Проекты</a></li>
+            <li class="header__top__nav-item"><a href="">Контакты</a></li>
           </ul>
         </nav>
-        <button class="header__login-btn"></button>
+        <button class="header__login-btn">
+          <img class="header__enter-icon" src="images/enter.png" alt="login">
+          <span class="header__enter-text">Войти</span>
+        </button>
       </div>
     </div>
 
     <div class="header__bottom">
-      <ul class="header__bottom__nav-list">
-        <li class="header__bottom__nav-item">Реализм</li>
-        <li class="header__bottom__nav-item">Импрессионизм</li>
-        <li class="header__bottom__nav-item">Постимпрессионизм</li>
-        <li class="header__bottom__nav-item">Авангард</li>
-        <li class="header__bottom__nav-item">Футуризм</li>
-      </ul>
-      <button class="header__search-btn"></button>
+      <div class="container">
+        <ul class="header__bottom-list">
+          <li class="header__bottom-item">
+            
+              <!-- <input type="reset" class="reset" value="Clear it!" /> -->
+              <div class="__select" data-state="">
+                <div class="__select__title" data-default="Реализм">Реализм</div>
+                <div class="__select__content">
+                  <input id="singleSelect0" class="__select__input" type="radio" name="singleSelect" checked />
+                  <label for="singleSelect0" class="__select__label">Реализм</label>
+                  <input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
+                  <label for="singleSelect1" class="__select__label">Option 1</label>
+                  <input id="singleSelect2" class="__select__input" type="radio" name="singleSelect" />
+                  <label for="singleSelect2" class="__select__label">Option 2</label>
+                  <input id="singleSelect3" class="__select__input" type="radio" name="singleSelect" />
+                  <label for="singleSelect3" class="__select__label">Option 3</label>
+                  <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
+                  <label for="singleSelect4" class="__select__label">Option 4</label>
+              </div>
+            </div>
+          </li>
+          <li class="header__bottom-item">Импрессионизм</li>
+          <li class="header__bottom-item">Постимпрессионизм</li>
+          <li class="header__bottom-item">Авангард</li>
+          <li class="header__bottom-item">Футуризм</li>
+        </ul>
+        <button class="header__search-btn"></button>
+      </div>
     </div>
  
   </header>
+  
 </body>
 
 </html>

@@ -20,6 +20,7 @@ html {
 
 body {
   font-family: var(--font-family);
+  font-size: var(--font-size);
   font-weight: 400;
 }
 
@@ -29,6 +30,7 @@ a {
 }
 ul {
   list-style: none;
+  padding: 0;
 }
 
 img {
@@ -38,6 +40,7 @@ img {
 .container {
   max-width: 1920px;
   padding: 0 160px;
+  margin: auto;
 }
 
 /* header section */
@@ -45,6 +48,8 @@ img {
 .header {
   display: flex;
   flex-direction: column;
+  color: #ffffff;
+  font-size: 1.125em;
 }
 .header__top {
   height: 100px;
@@ -63,15 +68,44 @@ img {
   width: 173px;
   height: 40px;
 }
+.header__top__nav {
+  flex-grow: 0.4;
+}
 .header__top__nav-list {
-  color: #ffffff;
+  font-weight: 600;
   display: flex;
 }
 .header__top__nav-item:not(:last-child) {
-  margin-right: 62px;
+  margin-right: 3.9rem;
+  /* margin-right: 4.4vmin; */
+}
+.header__login-btn {
+  padding: 0;
+  color: white;
+  background-color: inherit;
+  border: none;
+}
+.header__enter-icon {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
 }
 
 .header__bottom {
   background-color: black;
   opacity: 70%;
+}
+.header__bottom .container {
+  display: flex;
+  justify-content: space-between;
+}
+.header__bottom-list {
+  display: flex;
+  width: 100%;
+}
+.header__login-btn:hover {
+  cursor: pointer;
+}
+.header__bottom__option {
+  width: 100%;
 }
