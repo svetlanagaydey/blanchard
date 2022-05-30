@@ -16,6 +16,11 @@ html {
   --font-size: 16px;
   --font-family: "Open Sans", sans-serif;
   --color: #333333;
+  --font-color-light: white;
+  --font-color-dark: rgba(51, 51, 51, 1);
+  --color-purple-ligth: rgba(209, 169, 240, 1);
+  --color-purple: rgba(157, 92, 208, 1);
+  --color-purple-dark: rgba(121, 67, 164, 1);
 }
 
 body {
@@ -48,7 +53,7 @@ img {
 .header {
   display: flex;
   flex-direction: column;
-  color: #ffffff;
+  color: var(--font-color-light);
   font-size: 1.125em;
 }
 .header__top {
@@ -81,7 +86,7 @@ img {
 }
 .header__login-btn {
   padding: 0;
-  color: white;
+  color: var(--font-color-light);
   background-color: inherit;
   border: none;
 }
@@ -131,7 +136,8 @@ img {
 }
 
 .header__bottom__select-title:hover {
-  border-color: #d8093a;
+  cursor: pointer;
+  background-color: #d8093a;
 }
 
 .header__login-btn:hover {
@@ -155,5 +161,46 @@ img {
   border-bottom: 1px solid white;
 }
 .header__bottom__search-input::placeholder {
-  color: white;
+  color: var(--font-color-light);
+}
+
+/* hero section */
+
+.hero {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  min-height: 800px;
+  z-index: -1;
+}
+.hero img {
+  position: absolute;
+}
+.hero__content {
+  max-width: 30%;
+  position: absolute;
+}
+.hero__title {
+  vertical-align: middle;
+  padding-top: 42%;
+  margin: 0;
+  font-size: 72px;
+  font-weight: 700;
+  color: var(--font-color-light);
+}
+.hero__text {
+  margin-bottom: 16%;
+  color: var(--font-color-light);
+  font-size: 18px;
+  line-height: 1.65;
+  font-weight: 700;
+}
+.herro__button {
+  padding: 25px 35px;
+  background-color: var(--color-purple);
+  color: var(--font-color-light);
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+  border-radius: 100px;
 }
