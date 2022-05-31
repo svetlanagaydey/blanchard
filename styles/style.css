@@ -28,10 +28,11 @@ body {
 h2 {
   font-size: 48px;
   font-weight: 400;
-  margin-bottom: 1.1vw;
+  margin-bottom: 0;
+  /* margin-bottom: 1.1vw; */
 }
 section {
-  margin-bottom: 4.4vw;
+  margin-bottom: 3.6vw;
 }
 a {
   color: inherit;
@@ -221,9 +222,26 @@ img {
   border-radius: 100px;
 }
 
-/* about-us */
+/* section about-us */
 
 .about-us__content {
   line-height: 2;
   max-width: 1140px;
+}
+.about-us__header {
+  margin-bottom: 1.1vw;
+  margin-top: 4.4vw;
+}
+
+/* section gallery */
+.gallery {
+  margin-top: 0.25vw;
+  padding: 80px 0;
+  color: var(--font-color-light);
+  background-image: url(../images/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 3.jpg);
+  background-repeat: no-repeat;
+}
+.gallery__header {
+  color: var(--font-color-light);
+  margin-top: 0.3vw;
 }
