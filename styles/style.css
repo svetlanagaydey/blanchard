@@ -11,7 +11,6 @@ html {
 :root {
   --font-size: 16px;
   --font-family: "Open Sans", sans-serif;
-  --color: #333333;
   --font-color-light: white;
   --font-color-dark: rgba(51, 51, 51, 1);
   --color-purple-ligth: rgba(209, 169, 240, 1);
@@ -235,13 +234,158 @@ img {
 
 /* section gallery */
 .gallery {
+  display: flex;
+  justify-content: space-between;
   margin-top: 0.25vw;
   padding: 80px 0;
   color: var(--font-color-light);
   background-image: url(../images/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 3.jpg);
   background-repeat: no-repeat;
 }
+.gallery__content {
+  width: 30%;
+}
+
 .gallery__header {
   color: var(--font-color-light);
   margin-top: 0.3vw;
+  margin-bottom: 1.45vw;
+}
+.gallery__filter {
+  margin-bottom: 9.5vw;
+}
+.gallery__filter-label {
+  display: inline-block;
+  margin-bottom: 0.8vw;
+  font-size: 0.835vw;
+  font-weight: 600;
+}
+.choices {
+  margin-bottom: 185px;
+  width: 400px;
+  height: 40px;
+
+  background: inherit;
+  border-radius: 6px;
+  border: 1px solid var(--font-color-light);
+}
+
+.choices:focus:not(:hover):not(:active) {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.choices:hover,
+.choices:active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.choices__inner {
+  position: relative;
+  width: 100%;
+  min-height: 40px;
+  padding: 10px 15px;
+
+  font-size: 16px;
+
+  border: none;
+  background: inherit;
+  color: var(--font-color-light);
+  opacity: 1;
+
+  z-index: 5;
+}
+
+.choices__list--dropdown,
+.choices__list[aria-expanded] {
+  padding: 0;
+  margin-top: 1px;
+  width: 400px;
+  height: 80px;
+  z-index: 2;
+  background: inherit;
+  border: 1px solid var(--font-color-light);
+  border-radius: 6px;
+}
+
+.choices[data-type*="select-one"]::after {
+  content: url(../images/arrow.svg);
+  right: 25px;
+  top: 12px;
+  border: none;
+
+  z-index: 11;
+}
+
+.choices[data-type*="select-one"].is-open::after {
+  content: url(../images/arrow-open.svg);
+  margin-top: -2px;
+}
+
+.choices__placeholder {
+  opacity: 1;
+}
+
+.is-open .choices__list--dropdown,
+.is-open .choices__list[aria-expanded] {
+  border: 1px solid #999;
+}
+
+.is-focused .choices__inner,
+.is-open .choices__inner {
+  border-color: var(--color-white);
+}
+
+.choices__list--dropdown .choices__placeholder {
+  display: none;
+}
+
+.choices__list--single {
+  padding: 0;
+}
+
+.choices__list--single .choices__item {
+  color: var(--color-white);
+}
+
+.choices__list--dropdown .choices__list,
+.choices__list[aria-expanded] .choices__list {
+  padding: 0;
+}
+
+.choices__list--dropdown .choices__item,
+.choices__list[aria-expanded] .choices__item {
+  margin: 0;
+  padding: 14px 20px;
+  height: 40px;
+
+  border-bottom: 1px solid #999;
+}
+
+.choices__item {
+  font-weight: 400;
+  font-size: 16px;
+  color: #999;
+}
+
+.choices__list--dropdown .choices__item--selectable.is-highlighted,
+.choices__list[aria-expanded] .choices__item--selectable.is-highlighted {
+  border: none;
+  color: var(--color-white);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.choices__list--dropdown .choices__item--selectable::after,
+.choices__list[aria-expanded] .choices__item--selectable::after {
+  content: "";
+}
+
+.gallery__slider {
+  width: 70%;
+  background-color: yellow;
+}
+.gallery__checkboxes {
+  flex-grow: 2.4;
+}
+.gallery__sheckbox-row:not(:last-child) {
+  margin-bottom: 0.75vw;
 }
