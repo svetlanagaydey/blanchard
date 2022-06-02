@@ -119,8 +119,8 @@
     </section>
 
     <section class="gallery">
- 
-        <div class="container gallery__content">
+      <div class="container gallery__container">
+        <div class="gallery__content">
           <h2 class="gallery__header">Галерея</h2>
           <div class="gallery__filter">
             <label for="gallery__select" class="gallery__filter-label">Фильтр</label>
@@ -132,25 +132,19 @@
           </div>
 
           <div class="gallery__checkboxes">
-            <div class="gallery__sheckbox-row">
-              <input type="checkbox" id="century19" name="century19">
-              <label for="century19">XIX век</label>
-            </div>
-            <div class="gallery__sheckbox-row">
-              <input type="checkbox" id="century20" name="century20">
-              <label for="century20">XX век</label>
-            </div>
-            <div class="gallery__sheckbox-row">
-              <input type="checkbox" id="modern" name="modern">
-              <label for="century20">Современость</label>
-            </div>
+            <input class="gallery__input-checkbox" type="checkbox" id="century19">
+            <label class="gallery__label-checkbox" for="century19">XIX век</label>
+            <input class="gallery__input-checkbox" type="checkbox" id="century20">
+            <label class="gallery__label-checkbox" for="century20">XX век</label>
+            <input class="gallery__input-checkbox" type="checkbox" id="modern">
+            <label class="gallery__label-checkbox" for="modern">Современность</label>
           </div>
         </div>
 
-        <div class="container gallery__slider">
+        <div class="gallery__slider">
           <div>hello</div>
         </div>
-     
+      </div>
     </section>
   </main>
   <script src="js/choices.min.js"></script>
