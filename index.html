@@ -159,19 +159,50 @@
           </div>
         </div>
 
-        <div class="gallery__slider">
-          <div>hello</div>
+        <div class="gallery__slider swiper">
+
+          <div class="gallery__swiper-wrap">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-next"></div>
+          </div>
+
+          <div class="swiper-wrapper">
+            <picture class="swiper-slide">
+              <source media="(max-width: 687px)" srcset="images/gallery-slide1-mobile.jpg">
+              <source media="(max-width: 1008px)" srcset="images/gallery-slide1-768.jpg">
+              <source media="(max-width: 1420px)" srcset="images/gallery-slide1-tablet.jpg">
+              <img src="images/gallery-slide1-desktop.jpg" alt="">
+            </picture>
+            <picture class="swiper-slide">
+              <img src="images/gallery-slide2-desktop.jpg" alt="">
+            </picture>
+            <picture class="swiper-slide">
+              <img src="images/gallery-slide3-desktop.jpg" alt="">
+            </picture>
+            <picture class="swiper-slide">
+              <img src="images/gallery-slide4-desktop.jpg" alt="">
+            </picture>
+            <picture class="swiper-slide">
+              <img src="images/gallery-slide5-desktop.jpg" alt="">
+            </picture>
+            <picture class="swiper-slide">
+              <img src="images/gallery-slide6-desktop.jpg" alt="">
+            </picture>
+          </div>
         </div>
       </div>
     </section>
   </main>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="js/choices.min.js"></script>
   <script src="js/javascript.js"></script>
   <!-- Swiper JS -->
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  
 
   <!-- Initialize Swiper -->
-  <script>
+  <!-- <script>
     var swiper = new Swiper(".mySwiper", {
       slidesPerView: 1,
         spaceBetween: 0,
@@ -189,7 +220,7 @@
           prevEl: ".swiper-button-prev",
         },
     });
-  </script>
+  </script> -->
 </body>
 
 </html>
