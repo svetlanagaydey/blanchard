@@ -32,20 +32,33 @@ var swiper = new Swiper(".mySwiper", {
 // Section Gallery slider
 
 let gallerySlider = new Swiper(".gallery__slider", {
-  slidesPerView: 3,
-  spaceBetween: 52,
-  slidesPerGroup: 3,
-  spaceAfterLast: 0,
-  
-  loopFillGroupWithBlank: true,
+  slidesPerView: 1,
+  slidesPerGroup: 1,
   pagination: {
     el: ".swiper-pagination",
     type: "fraction",
-    clickable: true,
   },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  breakpoints: {
+    480: {
+        slidesPerView: 2,
+        spaceBetween: 38,
+        slidesPerGroup: 2,
+    },
+    1008: {
+        slidesPerView: 2,
+        spaceBetween: 34,
+        slidesPerGroup: 2,
+    },
+    1760: {
+        slidesPerView: 3,
+        spaceBetween: 50,
+        slidesPerGroup: 3,
+    }
+}
+
 });
 
