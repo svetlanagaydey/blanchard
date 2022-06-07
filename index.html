@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/choices.min.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles/accordion.css">
   <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
@@ -208,201 +209,249 @@
         </div>
       </div>
     </section>
+    
     <section class="catalog container">
       <h2 class="catalog__title">Каталог</h2>
       <p class="catalog__description">Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы. </p>
-      <div class="catalog__content-block">
-        <ul class="catalog__acardeon">
-          <li class="acardeon-item">
-            <div class="acardeon-item__header">
-              <h3 class="acardeon-item__period">C 1400 по 1499 гг.</h3>
-              <button class="acardeon-item__button"></button>
-            </div>
+      
+      <div class="catalog__content-block ">
+       
+            <ul class="accordion">
+              <li class="accordion_item acardeon-item">
+                <div class="title_block acardeon-item__header">
+                  <h3 class="acardeon-item__period">C 1400 по 1499 гг.</h3>
+                  <button class="acardeon-item__button"></button>
+                </div> 
+                <div class="info">
+                  <ul class="catalog__wrap-list"> 
+                    <li class="catalog__wrap-item">
+                        <button class="catalog__wrap-btn btn-reset" data-path="all">
+                            Бенедетто ди Биндо
+                        </button>
+                    </li>
+                    <li class="catalog__wrap-item">
+                        <button class="catalog__wrap-btn btn-reset" data-path="all">
+                            Бергоньоне, Амброджо
+                        </button>
+                    </li>
+                    <li class="catalog__wrap-item">
+                        <button class="catalog__wrap-btn btn-reset" data-path="all">
+                            Биссоло, Франческо
+                        </button>
+                    </li>
+                    <li class="catalog__wrap-item">
+                        <button class="catalog__wrap-btn btn-reset" data-path="all">
+                            Больтраффио, Джованни
+                        </button>
+                    </li>
+                    <li class="catalog__wrap-item">
+                        <button class="catalog__wrap-btn btn-reset" data-path="all">
+                            Бонсиньори, Франческо
+                        </button>
+                    </li>
+                    <li class="catalog__wrap-item">
+                        <button class="catalog__wrap-btn btn-reset" data-path="all">
+                            Боттичини, Рафаэлло
+                        </button>
+                    </li>
+                    <li class="catalog__wrap-item">
+                        <button class="catalog__wrap-btn btn-reset" data-path="all">
+                            Брамантино
+                        </button>
+                    </li>
+                    <li class="catalog__wrap-item">
+                        <button class="catalog__wrap-btn btn-reset" data-path="all">
+                            Бреа, Людовико
+                        </button>
+                    </li>
+                    <li class="catalog__wrap-item">
+                        <button class="catalog__wrap-btn btn-reset" data-path="all">
+                            Бьяджо д’Антонио Туччи
+                        </button>
+                    </li>
+                    <li class="catalog__wrap-item">
+                        <button class="catalog__wrap-btn btn-reset" data-path="Vecchietta">
+                            Веккьетта
+                        </button>
+                    </li>
+                    <li class="catalog__wrap-item">
+                        <button class="catalog__wrap-btn btn-reset" data-path="all">
+                            Андреа Верроккьо
+                        </button>
+                    </li>
+                    <li class="catalog__wrap-item">
+                        <button class="catalog__wrap-btn catalog__wrap-btn--active btn-reset"
+                            data-path="DomenicoGhirlandaio">
+                            Доменико Гирландайо
+                        </button>
+                    </li>
+                    <li class="catalog__wrap-item">
+                        <button class="catalog__wrap-btn btn-reset" data-path="all">
+                            Беноццо Гоццоли
+                        </button>
+                    </li>
+                    <li class="catalog__wrap-item">
+                        <button class="catalog__wrap-btn btn-reset" data-path="all">
+                            Граначчи, Франческо
+                        </button>
+                    </li>
+                    <li class="catalog__wrap-item">
+                        <button class="catalog__wrap-btn btn-reset" data-path="all">
+                            Грегорио ди Чекко
+                        </button>
+                    </li>
+                    <li class="catalog__wrap-item">
+                        <button class="catalog__wrap-btn btn-reset" data-path="all">
+                            Джованни да Удине
+                        </button>
+                    </li>
+                    <li class="catalog__wrap-item">
+                        <button class="catalog__wrap-btn btn-reset" data-path="all">
+                            Джованни ди Паоло
+                        </button>
+                    </li>
+                    <li class="catalog__wrap-item">
+                        <button class="catalog__wrap-btn btn-reset" data-path="Giorgione">
+                            Джорджоне
+                        </button>
+                    </li>
+                    <li class="catalog__wrap-item">
+                        <button class="catalog__wrap-btn btn-reset" data-path="all">
+                            Парентино, Бернардо
+                        </button>
+                    </li>
+                    <li class="catalog__wrap-item">
+                        <button class="catalog__wrap-btn btn-reset" data-path="all">
+                            Пезеллино
+                        </button>
+                    </li>
+                    <li class="catalog__wrap-item">
+                        <button class="catalog__wrap-btn btn-reset" data-path="all">
+                            Пьетро Перуджино
+                        </button>
+                    </li>
+                    <li class="catalog__wrap-item">
+                        <button class="catalog__wrap-btn btn-reset" data-path="all">
+                            Перуцци, Бальдассаре
+                        </button>
+                    </li>
+                    <li class="catalog__wrap-item">
+                        <button class="catalog__wrap-btn btn-reset" data-path="all">
+                            Пизанелло
+                        </button>
+                    </li>
+                    <li class="catalog__wrap-item">
+                        <button class="catalog__wrap-btn btn-reset" data-path="all">
+                            Пинтуриккьо
+                        </button>
+                    </li>
+                  </ul>
+                </div>
+              </li>
 
-            <div class="acardeon-item__wrap-list">
-              <!-- check and delete styles not in use -->
-              <ul class="catalog__wrap-list"> 
-                <li class="catalog__wrap-item">
-                    <button class="catalog__wrap-btn btn-reset" data-path="all">
-                        Бенедетто ди Биндо
-                    </button>
-                </li>
-                <li class="catalog__wrap-item">
-                    <button class="catalog__wrap-btn btn-reset" data-path="all">
-                        Бергоньоне, Амброджо
-                    </button>
-                </li>
-                <li class="catalog__wrap-item">
-                    <button class="catalog__wrap-btn btn-reset" data-path="all">
-                        Биссоло, Франческо
-                    </button>
-                </li>
-                <li class="catalog__wrap-item">
-                    <button class="catalog__wrap-btn btn-reset" data-path="all">
-                        Больтраффио, Джованни
-                    </button>
-                </li>
-                <li class="catalog__wrap-item">
-                    <button class="catalog__wrap-btn btn-reset" data-path="all">
-                        Бонсиньори, Франческо
-                    </button>
-                </li>
-                <li class="catalog__wrap-item">
-                    <button class="catalog__wrap-btn btn-reset" data-path="all">
-                        Боттичини, Рафаэлло
-                    </button>
-                </li>
-                <li class="catalog__wrap-item">
-                    <button class="catalog__wrap-btn btn-reset" data-path="all">
-                        Брамантино
-                    </button>
-                </li>
-                <li class="catalog__wrap-item">
-                    <button class="catalog__wrap-btn btn-reset" data-path="all">
-                        Бреа, Людовико
-                    </button>
-                </li>
-                <li class="catalog__wrap-item">
-                    <button class="catalog__wrap-btn btn-reset" data-path="all">
-                        Бьяджо д’Антонио Туччи
-                    </button>
-                </li>
-                <li class="catalog__wrap-item">
-                    <button class="catalog__wrap-btn btn-reset" data-path="Vecchietta">
-                        Веккьетта
-                    </button>
-                </li>
-                <li class="catalog__wrap-item">
-                    <button class="catalog__wrap-btn btn-reset" data-path="all">
-                        Андреа Верроккьо
-                    </button>
-                </li>
-                <li class="catalog__wrap-item">
-                    <button class="catalog__wrap-btn catalog__wrap-btn--active btn-reset"
-                        data-path="DomenicoGhirlandaio">
-                        Доменико Гирландайо
-                    </button>
-                </li>
-                <li class="catalog__wrap-item">
-                    <button class="catalog__wrap-btn btn-reset" data-path="all">
-                        Беноццо Гоццоли
-                    </button>
-                </li>
-                <li class="catalog__wrap-item">
-                    <button class="catalog__wrap-btn btn-reset" data-path="all">
-                        Граначчи, Франческо
-                    </button>
-                </li>
-                <li class="catalog__wrap-item">
-                    <button class="catalog__wrap-btn btn-reset" data-path="all">
-                        Грегорио ди Чекко
-                    </button>
-                </li>
-                <li class="catalog__wrap-item">
-                    <button class="catalog__wrap-btn btn-reset" data-path="all">
-                        Джованни да Удине
-                    </button>
-                </li>
-                <li class="catalog__wrap-item">
-                    <button class="catalog__wrap-btn btn-reset" data-path="all">
-                        Джованни ди Паоло
-                    </button>
-                </li>
-                <li class="catalog__wrap-item">
-                    <button class="catalog__wrap-btn btn-reset" data-path="Giorgione">
-                        Джорджоне
-                    </button>
-                </li>
-                <li class="catalog__wrap-item">
-                    <button class="catalog__wrap-btn btn-reset" data-path="all">
-                        Парентино, Бернардо
-                    </button>
-                </li>
-                <li class="catalog__wrap-item">
-                    <button class="catalog__wrap-btn btn-reset" data-path="all">
-                        Пезеллино
-                    </button>
-                </li>
-                <li class="catalog__wrap-item">
-                    <button class="catalog__wrap-btn btn-reset" data-path="all">
-                        Пьетро Перуджино
-                    </button>
-                </li>
-                <li class="catalog__wrap-item">
-                    <button class="catalog__wrap-btn btn-reset" data-path="all">
-                        Перуцци, Бальдассаре
-                    </button>
-                </li>
-                <li class="catalog__wrap-item">
-                    <button class="catalog__wrap-btn btn-reset" data-path="all">
-                        Пизанелло
-                    </button>
-                </li>
-                <li class="catalog__wrap-item">
-                    <button class="catalog__wrap-btn btn-reset" data-path="all">
-                        Пинтуриккьо
-                    </button>
-                </li>
+              <li class="accordion_item acardeon-item">
+                <div class="title_block acardeon-item__header">
+                  <h3 class="acardeon-item__period">C 1500 по 1599 гг.</h3>
+                  <button class="acardeon-item__button"></button>
+                </div>
+                <div class="info">
+                  <div class="catalog__item-place"></div>
+                  <div class="catalog__item-content">
+                      <h3 class="catalog__item-text">Здесь пока пусто</h3>
+                      <p class="catalog__item-descr">А в галерее вы всегда можете найти что-то
+                          интересное для себя</p>
+                      <a href="#gallery" class="catalog__item-link link bg-focus">В галерею</a>
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="accordion_item acardeon-item">
+                <div class="title_block acardeon-item__header">
+                  <h3 class="acardeon-item__period">C 1600 по 1699 гг.</h3>
+                  <button class="acardeon-item__button"></button>
+                </div>
+                <div class="info">
+                  <div class="catalog__item-place"></div>
+                  <div class="catalog__item-content">
+                      <h3 class="catalog__item-text">Здесь пока пусто</h3>
+                      <p class="catalog__item-descr">А в галерее вы всегда можете найти что-то
+                          интересное для себя</p>
+                      <a href="#gallery" class="catalog__item-link link bg-focus">В галерею</a>
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="accordion_item acardeon-item">
+                <div class="title_block acardeon-item__header">
+                  <h3 class="acardeon-item__period">C 1700 по 1799 гг.</h3>
+                  <button class="acardeon-item__button"></button>
+                </div>
+                <div class="info">
+                  <div class="catalog__item-place"></div>
+                  <div class="catalog__item-content">
+                      <h3 class="catalog__item-text">Здесь пока пусто</h3>
+                      <p class="catalog__item-descr">А в галерее вы всегда можете найти что-то
+                          интересное для себя</p>
+                      <a href="#gallery" class="catalog__item-link link bg-focus">В галерею</a>
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="accordion_item acardeon-item">
+                <div class="title_block acardeon-item__header">
+                  <h3 class="acardeon-item__period">C 1800 по 1899 гг.</h3>
+                  <button class="acardeon-item__button"></button>
+                </div>
+                <div class="info">
+                  <div class="catalog__item-place"></div>
+                  <div class="catalog__item-content">
+                      <h3 class="catalog__item-text">Здесь пока пусто</h3>
+                      <p class="catalog__item-descr">А в галерее вы всегда можете найти что-то
+                          интересное для себя</p>
+                      <a href="#gallery" class="catalog__item-link link bg-focus">В галерею</a>
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="accordion_item acardeon-item">
+                <div class="title_block acardeon-item__header">
+                  <h3 class="acardeon-item__period">C 1900 по 1999 гг.</h3>
+                  <button class="acardeon-item__button"></button>
+                </div>
+                <div class="info">
+                  <div class="catalog__item-place"></div>
+                  <div class="catalog__item-content">
+                      <h3 class="catalog__item-text">Здесь пока пусто</h3>
+                      <p class="catalog__item-descr">А в галерее вы всегда можете найти что-то
+                          интересное для себя</p>
+                      <a href="#gallery" class="catalog__item-link link bg-focus">В галерею</a>
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="accordion_item acardeon-item">
+                <div class="title_block acardeon-item__header">
+                  <h3 class="acardeon-item__period">C 2000 г.</h3>
+                  <button class="acardeon-item__button"></button>
+                </div>
+                <div class="info">
+                  <div class="catalog__item-place"></div>
+                  <div class="catalog__item-content">
+                      <h3 class="catalog__item-text">Здесь пока пусто</h3>
+                      <p class="catalog__item-descr">А в галерее вы всегда можете найти что-то
+                          интересное для себя</p>
+                      <a href="#gallery" class="catalog__item-link link bg-focus">В галерею</a>
+                  </div>
+
+                </div>
+              </li>
             </ul>
-
-            </div>
-          </li>
-          <li class="acardeon-item">
-            <div class="acardeon-item__header">
-              <h3 class="acardeon-item__period">C 1500 по 1599 гг.</h3>
-              <button class="acardeon-item__button"></button>
-            </div>
-            <div class="acardeon-item__wrap-list">
-
-            </div>
-          </li>
-          <li class="acardeon-item">
-            <div class="acardeon-item__header">
-              <h3 class="acardeon-item__period">C 1600 по 1699 гг.</h3>
-              <button class="acardeon-item__button"></button>
-            </div>
-            <div class="acardeon-item__wrap-list">
-
-            </div>
-          </li>
-          <li class="acardeon-item">
-            <div class="acardeon-item__header">
-              <h3 class="acardeon-item__period">C 1700 по 1799 гг.</h3>
-              <button class="acardeon-item__button"></button>
-            </div>
-            <div class="acardeon-item__wrap-list">
-
-            </div>
-          </li>
-          <li class="acardeon-item">
-            <div class="acardeon-item__header">
-              <h3 class="acardeon-item__period">C 1800 по 1899 гг.</h3>
-              <button class="acardeon-item__button"></button>
-            </div>
-            <div class="acardeon-item__wrap-list">
-
-            </div>
-          </li>
-          <li class="acardeon-item">
-            <div class="acardeon-item__header">
-              <h3 class="acardeon-item__period">C 1900 по 1999 гг.</h3>
-              <button class="acardeon-item__button"></button>
-            </div>
-            <div class="acardeon-item__wrap-list">
-
-            </div>
-          </li>
-          <li class="acardeon-item">
-            <div class="acardeon-item__header">
-              <h3 class="acardeon-item__period">C 2000 г.</h3>
-              <button class="acardeon-item__button"></button>
-            </div>
-            <div class="acardeon-item__wrap-list">
-
-            </div>
-          </li>
-        </ul>
-
+          
         <div class="catalog__active-artist">
           <div class="catalog__content-left">
             <!-- <div class="catalog__content-info" data-target="all">
@@ -478,8 +527,25 @@
 
         </div>
       </div>
+     
     </section>
   </main>
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+  <script type="text/javascript">
+    ! function(i) {
+      var o, n;
+      i(".title_block").on("click", function() {
+        o = i(this).parents(".accordion_item"), n = o.find(".info"),
+          o.hasClass("active_block") ? (o.removeClass("active_block"),
+            n.slideUp()) : (o.addClass("active_block"), n.stop(!0, !0).slideDown(),
+            o.siblings(".active_block").removeClass("active_block").children(
+              ".info").stop(!0, !0).slideUp())
+      })
+    }(jQuery);
+   </script>
+
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="js/choices.min.js"></script>
   <script src="js/javascript.js"></script>

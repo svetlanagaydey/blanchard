@@ -16,6 +16,7 @@ html {
   --color-purple-ligth: rgba(209, 169, 240, 1);
   --color-purple: rgba(157, 92, 208, 1);
   --color-purple-dark: rgba(121, 67, 164, 1);
+  --color-ligth-gray: rgba(183, 183, 183, 1);
 }
 
 body {
@@ -497,7 +498,6 @@ img {
   justify-content: space-between;
   width: 139px;
   height: 30px;
-
   margin-bottom: 2.4vw;
 }
 .swiper-pagination-bullets.swiper-pagination-horizontal,
@@ -548,7 +548,7 @@ img {
 }
 .catalog__acardeon {
   margin: 0;
-  width: 50%;
+  width: 100%;
 }
 .catalog__title {
   padding-bottom: 0.25vw;
@@ -559,7 +559,7 @@ img {
   line-height: 2;
 }
 .acardeon-item {
-  border-top: 1px solid var(--font-color-dark);
+  border-top: 1px solid var(--color-ligth-gray);
 }
 .acardeon-item__period {
   font-size: 24px;
@@ -584,6 +584,20 @@ img {
   border-top-color: transparent;
   transform: rotate(45deg);
 }
+.active_block .acardeon-item__button::after {
+  transform: rotate(225deg);
+  top: 40%;
+}
+.acardeon-item:hover .acardeon-item__button {
+  background-color: var(--color-purple-ligth);
+}
+.active_block .acardeon-item__button {
+  border: 2px solid var(--color-purple-dark);
+}
+/* .acardeon-item__button:hover::after {
+  border-color: var(--color-purple-dark);
+} */
+
 .acardeon-item__header {
   height: inherit;
   display: flex;
@@ -594,16 +608,13 @@ img {
 .catalog__active-artist {
   width: 47%;
 }
-.acardeon-item__wrap-list {
-  position: static;
-}
+
 .catalog__wrap-list {
   width: 96%;
   display: grid;
   grid-auto-flow: column;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(9, 1fr);
-  padding: 1.4vw 0;
 }
 
 .catalog__wrap-item {
@@ -638,5 +649,39 @@ img {
 .catalog__content-bithday {
   margin: 0;
   font-size: 12px;
-  color: rgb(4, 1, 1);
+  color: var(--font-color-dark);
+}
+.info {
+  display: flex;
+  justify-content: flex-start;
+  padding: 1.4vw 0;
+}
+.catalog__item-place {
+  width: 35%;
+  min-height: 189px;
+  position: relative;
+  border: 2px solid var(--color-ligth-gray);
+  margin-right: 2vw;
+}
+.catalog__item-place:after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 6px solid white;
+  background-color: var(--color-ligth-gray);
+}
+.active_block .info {
+  display: flex;
+}
+.catalog__item-content {
+  width: 40%;
+}
+.catalog__item-descr {
+  line-height: 1.5;
+}
+.catalog__item-link {
+  color: var(--color-purple);
 }

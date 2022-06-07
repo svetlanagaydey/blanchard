@@ -61,3 +61,11 @@ let gallerySlider = new Swiper(".gallery__slider", {
   }
 });
 
+// section catalog
+
+//accordion    
+$( function() {
+  $( "#accordion" ).accordion();
+} );
+
+
