@@ -58,7 +58,6 @@ let gallerySlider = new Swiper(".gallery__slider", {
         spaceBetween: 50,
         slidesPerGroup: 3,
     }
-}
-
+  }
 });
 

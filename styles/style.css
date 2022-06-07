@@ -246,6 +246,7 @@ img {
 /* section gallery */
 .gallery {
   margin-top: 0.25vw;
+  margin-bottom: 4.35vw;
   padding: 85px 0;
   color: var(--font-color-light);
   background-image: url(../images/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 3.jpg);
@@ -537,4 +538,105 @@ img {
 
 .swiper-pagination {
   margin-top: 21px;
+}
+
+/* section catalog */
+.catalog__content-block {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+.catalog__acardeon {
+  margin: 0;
+  width: 50%;
+}
+.catalog__title {
+  padding-bottom: 0.25vw;
+}
+.catalog__description {
+  width: 68%;
+  margin-bottom: 2vw;
+  line-height: 2;
+}
+.acardeon-item {
+  border-top: 1px solid var(--font-color-dark);
+}
+.acardeon-item__period {
+  font-size: 24px;
+}
+.acardeon-item__button {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(236, 236, 236, 1);
+  border: 1px solid transparent;
+  border-radius: 50%;
+}
+.acardeon-item__button::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 32%;
+  left: 39%;
+  border: 1px solid var(--font-color-dark);
+  border-left-color: transparent;
+  border-top-color: transparent;
+  transform: rotate(45deg);
+}
+.acardeon-item__header {
+  height: inherit;
+  display: flex;
+  height: 114px;
+  justify-content: space-between;
+  align-items: center;
+}
+.catalog__active-artist {
+  width: 47%;
+}
+.acardeon-item__wrap-list {
+  position: static;
+}
+.catalog__wrap-list {
+  width: 96%;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+  padding: 1.4vw 0;
+}
+
+.catalog__wrap-item {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--color-dark-gray);
+}
+
+.catalog__wrap-btn {
+  padding: 0;
+  vertical-align: middle;
+  border: none;
+  background-color: inherit;
+}
+
+.catalog__img-block {
+  display: inline-block;
+  margin-bottom: 1.5vw;
+}
+.catalog__content-title {
+  font-size: 1.25vw;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 0.5vw;
+}
+.catalog__content-descr {
+  margin: 0;
+  font-size: 16px;
+  line-height: 2;
+}
+.catalog__content-bithday {
+  margin: 0;
+  font-size: 12px;
+  color: rgb(4, 1, 1);
 }
